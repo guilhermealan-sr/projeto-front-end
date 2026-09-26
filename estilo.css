@@ -1,0 +1,272 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.1s linear;
+}
+
+body {
+    background-color: var(--bg);
+    background-image: url('./img/bg-home.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+section {
+    background-color: var(--bg);
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.2rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    height: 50px;
+    font-style: oblique;
+}
+
+.icones img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icones img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.conteudo h3 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.card-versi {
+    background-color: var(--black);
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.card-versi p {
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 1.6;
+    font-style: italic;
+    text-transform: none;
+}
+
+#btn-sorteio {
+    background-color: var(--main-color);
+    color: var(--bg);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#btn-sortear:hover {
+    background-color: #fff;
+}
+
+.categoria {
+    margin-bottom: 3rem;
+}
+
+.categoria h4 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.card-tema {
+    background-color: var(--black);
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.8rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: var(--black);
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    min-width: 200px;
+    padding: 1rem 0;
+    z-index: 100;
+}
+
+.dropdown-menu.ativo {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--main-color);
+    color: var(--bg);
+}
+
+#sobre h3 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.conteudo-sobre {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.conteudo-sobre p {
+    font-size: 1.7rem;
+    color: #fff;
+    line-height: 1.8;
+    text-transform: none;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.creditos {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    background-color: #13131a;
+}
+
+#convite {
+    text-align: center;
+}
+
+.conteudo-convite {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.conteudo-convite h3 {
+    font-size: 2.8rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.conteudo-convite p {
+    font-size: 1.7rem;
+    color: #fff;
+    line-height: 1.8;
+    text-transform: none;
+    margin-bottom: 2rem;
+}
+
+.chamado {
+    font-style: italic;
+    border-left: 0.3rem solid var(--main-color);
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.chamado span {
+    display: block;
+    margin-top: 0.8rem;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+
+.homec {
+    background-image: url('./img/bg-home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#sobre {
+    background-image: url('./img/bg-sobre.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#convite {
+    background-image: url('./img/bg-convite.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo,
+.conteudo-sobre,
+.conteudo-convite {
+    background-color: rgba(1, 1, 3, 0.75); /* preto quase opaco, baseado no seu --bg */
+    border-radius: 1rem;
+    padding: 3rem;
+}
